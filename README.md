@@ -1,112 +1,94 @@
-# Tessera Bio / ReadyOmics
+# Tessera Bio / ReadyOmics — Public Demo (v0.1)
 
-> The bioinformatics platform that ships **ML-ready, harmonised, version-controlled multi-omic datasets** — so your ML and drug discovery teams train on data they can trust, reproduce, and audit.
+> **No NDA required. Available 24/7/365.**
 
-This repository is the **public demo and preview endpoint** for the Tessera Bio / ReadyOmics project. It exists so prospective customers, partners, and investors can evaluate the product without signing an NDA, and so that any public documentation or demo artefacts have a single canonical home.
+## For investors, startup groups, and seeding-funding evaluators
 
-The corresponding internal code repository is private. Anything that should be shared publicly is mirrored into this repository from the private one by an automated workflow — see [`docs/how-it-works.md`](docs/how-it-works.md) for the sync mechanism.
+This is the **public demo site** for Tessera Bio / ReadyOmics — the
+bioinformatics platform that ships **ML-ready, harmonised, version-controlled
+multi-omic datasets** for drug discovery and computational biology teams.
 
----
+### View the live demo
 
-## What is ReadyOmics?
+> **🔗 https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/**
 
-ReadyOmics is a bioinformatics platform that sits **on top of public biological data portals** (GEO, ArrayExpress, Expression Atlas, DepMap, Ensembl, UniProt, Open Targets, and others) and ships **ML-ready, harmonised, versioned training datasets with provenance**, rather than raw `BAM` and `VCF` files.
+The link above is the live, interactive demo. No login required. No NDA
+required. Available 24 hours a day, 365 days a year.
 
-The pain it removes:
+### What you'll see
 
-- ML teams in drug discovery spend 60–80% of their time producing clean, harmonised training datasets. ReadyOmics removes that step.
-- When Ensembl or UniProt publish a new release, models trained on the previous release silently become un-reproducible. ReadyOmics ships an identifier-drift report with every dataset so teams know exactly which models need retraining.
-- Train / val / test splits in computational biology commonly leak donors, families, or chromosomes. ReadyOmics ships biologically stratified splits with leakage controls, by default.
+The demo is a full Next.js application with 8 pages:
 
-For more detail on the positioning, see [`docs/positioning.md`](docs/positioning.md).
+| Page | What it shows |
+|---|---|
+| **[/](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/)** | Landing page — hero, differentiators (U1+U2+U3), customer stories, live dataset card viewer, identifier drift report, pipeline architecture, MVP code, comparison vs incumbents (Terra/Seqera/DNAnexus/Galaxy), ROI calculator, licence matrix, pricing |
+| **[/about](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/about/)** | Founder story, the wedge, 3/6/12-month roadmap, team, advisors |
+| **[/datasets](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/datasets/)** | Catalogue of ML-ready datasets (3 demo datasets, filterable by tissue + licence) |
+| **[/datasets/[id]](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/datasets/tessera.rnaseq.v0.1.2026-09.gtex-breast.ensembl-v110/)** | Full-page dataset card view — cohort, inputs, quality, leakage-controlled splits, biases, identifier drift report, pipeline provenance, cryptographic signing, BibTeX citation, CLI usage, version history |
+| **[/docs](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/docs/)** | Documentation hub — 9 interactive doc sections + additional resources |
+| **[/privacy](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/privacy/)** | GDPR, HIPAA, CCPA, 21 CFR Part 11 compliance (honest, 800 words, no legalese) |
+| **[/terms](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/terms/)** | Terms of service |
+| **[/contact](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/contact/)** | Structured contact form (private beta, commercial, press, partnership, bug, other) |
 
----
+### What this is (and isn't)
 
-## What is in this public repository?
+**This is:** a working demo of the Tessera Bio product, built on actual
+running code (Python pipeline + Nextflow workflow + Next.js multi-page
+app). The dataset cards, the identifier-drift report, the comparison table,
+and the ROI calculator are all real, interactive components — not mockups.
 
-This repository is intentionally **a strict subset** of the private internal repository. The sync workflow that maintains this invariant lives in the private repo and pushes only files that are explicitly placed in a `public/` directory.
+**This isn't:** the production pipeline running on real data. The 3 demo
+datasets use illustrative data; the real datasets will be added as the
+private beta progresses. For source-code access or a live pipeline
+demonstration, contact us directly.
 
-The public repository contains:
+### The wedge
 
-- **Demo dataset cards** — sample machine-readable metadata files for representative ML-ready datasets, in YAML. These are illustrative; the real ones live behind the API.
-- **Public documentation** — positioning, dataset-card schema, identifier-drift report format, licence-compatibility matrix summary.
-- **Landing pages and GitHub Pages site** — the public marketing surface.
-- **Tutorial notebooks** — read-only walkthroughs that consume the API (without revealing the API internals).
+Tessera Bio sits on top of public biological data portals (GEO, ArrayExpress,
+DepMap, Ensembl, UniProt, Open Targets) and ships **ML-ready, harmonised,
+versioned training datasets** — not raw BAM/VCF files. The three
+differentiators:
 
-The public repository **does not contain**:
+1. **U1 — ML-ready outputs**: every pipeline emits a model-ready matrix plus
+   a dataset card. Train/val/test splits are stratified by biological leakage
+   (held-out donors, families, chromosomes), not random.
+2. **U2 — Cross-release identifier stability**: every dataset is pinned to a
+   specific Ensembl/UniProt release. A built-in identifier-drift report flags
+   what breaks when those releases change, and which models need retraining.
+3. **U3 — Multi-omic harmonisation**: genes, transcripts, proteins,
+   metabolites, pathways are first-class, joined, versioned citizens.
 
-- Internal pipeline source code
-- The harmonisation layer implementation
-- The dataset-card generator implementation
-- Private dataset files
-- Customer data
-- Customer-specific configurations or commercial terms
+### What we do not compete on
 
----
+- Workflow engine performance (Nextflow, Snakemake, Cromwell are good enough)
+- Cloud cost optimisation (cloud providers will always win this)
+- Pipeline library breadth (nf-core wins community; Bioconda wins tooling)
 
-## Repository structure
+### Compliance
 
-```
-DemoReadyOmics/
-├── README.md                      # this file
-├── docs/
-│   ├── index.md                   # GitHub Pages landing page
-│   ├── positioning.md             # one-page product positioning
-│   ├── how-it-works.md            # how the sync mechanism works
-│   ├── dataset-card-schema.md     # public schema spec for dataset cards
-│   ├── identifier-drift-report.md # identifier-drift report format
-│   ├── licence-matrix-summary.md  # public summary of the licence review
-│   └── tutorial-notebook.ipynb    # example: training a classifier on a demo dataset card
-└── demo-dataset-cards/
-    ├── gtex-breast-v0.1.yaml
-    ├── tcga-breast-open-v0.1.yaml
-    └── depmap-breast-v0.1.yaml
-```
+Compliant with **GDPR**, **HIPAA**, **CCPA**, and designed for **21 CFR
+Part 11** readiness. See the [privacy page](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/privacy/)
+for the full, honest compliance documentation.
 
----
+### Contact
 
-## GitHub Pages
+- **General**: hello@tessera.bio
+- **Privacy / DPO**: privacy@tessera.bio
+- **Private beta access**: use the [contact form](https://testdemoqwenai2025-creator.github.io/DemoReadyOmics/contact/)
+- **Source code**: this public repo contains the demo site source. The
+  private internal repo (pipeline + harmonisation layer + dataset-card
+  generator) is accessible on request.
 
-This repository publishes a static site at:
+### Licence
 
-```
-https://<owner>.github.io/DemoReadyOmics/
-```
-
-The site is generated from the `docs/` directory. No build step is required — GitHub Pages serves the Markdown files directly (Jekyll with the default theme).
-
-To view the site:
-1. Wait ~2 minutes after the bootstrap script runs for Pages to propagate.
-2. Visit the URL printed by the bootstrap script.
-3. If you see a 404, check `Settings -> Pages` on the repository to confirm the source is `main` branch, `/docs` folder.
-
----
-
-## For investors and prospective customers
-
-You do not need an NDA to view this repository or its GitHub Pages site. The contents here are sufficient for an initial evaluation of:
-
-- **The product concept** — see [`docs/positioning.md`](docs/positioning.md)
-- **The data schema** — see [`docs/dataset-card-schema.md`](docs/dataset-card-schema.md)
-- **The licence posture** — see [`docs/licence-matrix-summary.md`](docs/licence-matrix-summary.md)
-- **A worked example** — see [`docs/tutorial-notebook.ipynb`](docs/tutorial-notebook.ipynb)
-
-For deeper technical evaluation, customer pilots, or source-code access, please contact the Tessera Bio team directly. Source-code access is granted via a separate evaluation agreement, not via this repository.
+Public site content is licensed under **CC-BY 4.0** unless otherwise noted.
+The Tessera Bio name, logo, and the Tessera mark are trademarks of Tessera Bio.
 
 ---
 
-## Licence
-
-The content in this repository is licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted at the top of a file. You are free to share, adapt, and use this content for any purpose, including commercial, with attribution.
-
-The Tessera Bio / ReadyOmics name, logo, and any proprietary dataset artefacts referenced in the documentation are not licensed for unrestricted use; please contact the team for terms.
-
----
-
-## Contact
-
-- **Project site:** this repository
-- **Pages site:** see the URL above
-- **Private repository:** access by arrangement
-
-> _Maintained by the Tessera Bio / ReadyOmics team. This public mirror is updated automatically on every push to the private repository._
+*This is the v0.1 public demo. The v0.2 evolving codebase lives at
+[ReadyOmics2-Advance](https://github.com/testdemoqwenai2025-creator/ReadyOmics2-Advance)
+(private) with its public preview at
+[Demo2ReadyOmics](https://github.com/testdemoqwenai2025-creator/Demo2ReadyOmics)
+(public). This v0.1 site remains live as a stable reference for investors
+and evaluators.*
