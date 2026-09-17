@@ -1,0 +1,18 @@
+1:"$Sreact.fragment"
+2:I[7529,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"Header"]
+3:I[88095,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"Hero"]
+4:I[91599,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"Differentiators"]
+5:I[61603,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"DatasetCardViewer"]
+6:I[86568,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"DriftReportViewer"]
+7:I[90229,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"PipelineArchitecture"]
+8:I[25495,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"LiveMVPCode"]
+9:I[93756,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"ComparisonTable"]
+a:I[88369,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"CostSavingsCalculator"]
+b:I[87589,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"LicenceMatrix"]
+c:I[19537,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"BuyerSegmentsAndPricing"]
+d:I[73632,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"ContactFooter"]
+e:I[16815,["/DemoReadyOmics/_next/static/chunks/9c0f635724b45510.js","/DemoReadyOmics/_next/static/chunks/31a586799ff730a5.js","/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js"],"ReturnToHomeFab"]
+f:I[97367,["/DemoReadyOmics/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
+10:"$Sreact.suspense"
+0:{"buildId":"gZcUL1rPJOXwVZH6kdZFD","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"flex min-h-screen flex-col bg-background","id":"top","children":[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}]]}],["$","$Le",null,{}]]}],[["$","script","script-0",{"src":"/DemoReadyOmics/_next/static/chunks/75802e646cee7381.js","async":true}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}],"loading":null,"isPartial":false}
+11:null
