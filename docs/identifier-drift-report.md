@@ -1,3 +1,9 @@
+---
+layout: default
+title: Identifier Drift Report
+description: Tessera Bio / ReadyOmics — Identifier Drift Report documentation
+---
+
 # Identifier Drift Report
 
 One of the three core differentiators of Tessera Bio / ReadyOmics is **cross-release identifier stability** (U2). When a public database such as Ensembl or UniProt publishes a new release, identifiers change: genes are added, removed, merged, or split. Models trained on the previous release silently become un-reproducible.

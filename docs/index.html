@@ -1,0 +1,266 @@
+---
+layout: default
+title: Tessera Bio / ReadyOmics
+description: ML-ready, harmonised, version-controlled biological datasets for drug discovery and computational biology teams.
+---
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      v0.1 in private beta · No NDA required to evaluate
+    </div>
+    <h1>
+      ML-ready biological datasets,<br>
+      <span class="accent">versioned and audit-ready</span>.
+    </h1>
+    <p class="lead">
+      Tessera Bio sits on top of public biological data portals — GEO,
+      ArrayExpress, DepMap, Ensembl, UniProt, Open Targets — and ships
+      <strong>ML-ready, harmonised, version-controlled datasets</strong>
+      so your drug-discovery ML teams train on data they can trust,
+      reproduce, and audit.
+    </p>
+    <div class="hero-cta">
+      <a href="mailto:testdemoqwenai2025@gmail.com?subject=Private%20beta%20access" class="btn btn-primary">
+        Request private beta access →
+      </a>
+      <a href="#docs" class="btn btn-outline">
+        Read the public docs
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="num">60–80%</div>
+        <div class="label">ML-team time saved</div>
+        <div class="desc">No more FASTQ wrangling. Datasets arrive train-ready.</div>
+      </div>
+      <div class="stat">
+        <div class="num">v110-pinned</div>
+        <div class="label">Ensembl release</div>
+        <div class="desc">Every dataset declares reference versions. Drift reports ship on every release.</div>
+      </div>
+      <div class="stat">
+        <div class="num">0 leaks</div>
+        <div class="label">Across train / val / test</div>
+        <div class="desc">Biologically stratified splits. No silent leakage across donors or cohorts.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="differentiators">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">The wedge</span>
+      <h2>We don't compete with pipeline runners.<br>We compete on the handoff to ML.</h2>
+      <p>
+        Existing platforms (Nextflow, Terra, Galaxy, Seqera, AWS HealthOmics) are
+        good enough at running workflows. Almost none of them ship datasets that
+        are <em>ready to train on</em>. That handoff — from pipelines to ML — is
+        where Tessera Bio is uniquely good.
+      </p>
+    </div>
+
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="tag">U1</div>
+        <h3>ML-ready outputs</h3>
+        <div class="tagline">Not just BAMs and VCFs — train-ready matrices.</div>
+        <p>
+          Every pipeline emits a model-ready matrix plus a dataset card.
+          Train / val / test splits are stratified by biological leakage
+          (held-out donors, families, chromosomes, drugs), not random.
+        </p>
+        <ul>
+          <li>Leakage-controlled splits by default</li>
+          <li>Dataset card with full provenance</li>
+          <li>Quality metrics + failed-sample list</li>
+          <li>Suggested vs discouraged uses documented</li>
+        </ul>
+      </div>
+
+      <div class="diff-card">
+        <div class="tag">U2</div>
+        <h3>Identifier stability</h3>
+        <div class="tagline">When Ensembl or UniProt release, we tell you what broke.</div>
+        <p>
+          Every dataset is pinned to a specific Ensembl release, UniProt
+          release, and reference genome build. A built-in identifier-drift
+          report flags genes added, removed, merged, or split between
+          releases.
+        </p>
+        <ul>
+          <li>Pinned Ensembl / UniProt releases per dataset</li>
+          <li>Identifier-drift report on every release</li>
+          <li>Model-impact assessment: which models need retraining</li>
+          <li>Cryptographic provenance via Sigstore signatures</li>
+        </ul>
+      </div>
+
+      <div class="diff-card">
+        <div class="tag">U3</div>
+        <h3>Multi-omic harmonisation</h3>
+        <div class="tagline">Genes, transcripts, proteins, metabolites — first-class.</div>
+        <p>
+          Most platforms handle one omic well and bolt the others on.
+          Tessera treats genes, transcripts, proteins, metabolites, and
+          pathways as first-class, joined, versioned citizens.
+        </p>
+        <ul>
+          <li>Common biological entity model across omics</li>
+          <li>Automatic join-key resolution</li>
+          <li>Unit and scale harmonisation</li>
+          <li>Per-source attribution pass-through</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="max-width: 760px; margin: 3rem auto 0; padding: 1.5rem; background: var(--bg-muted); border-radius: 12px; border: 1px solid var(--border);">
+      <h3 style="font-size: 1.0625rem; font-weight: 600; margin-bottom: 1rem;">What we do <em>not</em> compete on</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-size: 0.875rem;">
+        <div>
+          <strong>Workflow engine performance</strong><br>
+          <span style="color: var(--text-muted);">Nextflow, Snakemake, Cromwell are good enough.</span>
+        </div>
+        <div>
+          <strong>Cloud cost optimisation</strong><br>
+          <span style="color: var(--text-muted);">Cloud providers will always win this.</span>
+        </div>
+        <div>
+          <strong>Pipeline library breadth</strong><br>
+          <span style="color: var(--text-muted);">nf-core wins community; Bioconda wins tooling.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="docs" style="background: var(--bg-muted);">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Public documentation</span>
+      <h2>No NDA required</h2>
+      <p>
+        These docs are sufficient for an initial evaluation of the product
+        concept, dataset-card schema, and licence posture. For deeper
+        technical evaluation, source-code access, or commercial discussions,
+        reach out directly.
+      </p>
+    </div>
+
+    <div class="docs-list">
+      <a href="{{ '/positioning' | relative_url }}" class="doc-card">
+        <div class="title">Positioning →</div>
+        <div class="desc">What Tessera Bio is, what pain it removes, who buys it, and what we don't compete on.</div>
+      </a>
+      <a href="{{ '/dataset-card-schema' | relative_url }}" class="doc-card">
+        <div class="title">Dataset Card Schema →</div>
+        <div class="desc">Every dataset ships with a machine-readable card. This page documents the fields.</div>
+      </a>
+      <a href="{{ '/identifier-drift-report' | relative_url }}" class="doc-card">
+        <div class="title">Identifier Drift Report →</div>
+        <div class="desc">How Tessera tells you which of your models need retraining when Ensembl or UniProt release.</div>
+      </a>
+      <a href="{{ '/licence-matrix-summary' | relative_url }}" class="doc-card">
+        <div class="title">Licence Matrix Summary →</div>
+        <div class="desc">Which public data sources we ingest and under what licences.</div>
+      </a>
+      <a href="{{ '/how-it-works' | relative_url }}" class="doc-card">
+        <div class="title">How it works →</div>
+        <div class="desc">The one-way sync mechanism that keeps this public site a strict subset of the private repo.</div>
+      </a>
+      <a href="https://github.com/testdemoqwenai2025-creator/DemoReadyOmics" class="doc-card" target="_blank" rel="noopener">
+        <div class="title">Source on GitHub ↗</div>
+        <div class="desc">The public repo is a strict subset of the private one. Internal code is accessible on request.</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Pricing</span>
+      <h2>Open-core. Pipeline is free. The harmonisation layer is what you pay for.</h2>
+      <p>
+        Pipeline code is Apache 2.0 (commodity). The harmonisation layer
+        and dataset-card generator are source-available. Numbers below
+        are placeholders — we anchor against bench-time saved per dataset
+        (1–2 weeks per cohort for a single bioinformatician).
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="tier">
+        <h3>Open Research</h3>
+        <div class="price">Free</div>
+        <ul>
+          <li>Open-licence datasets (GEO, Expression Atlas, DepMap)</li>
+          <li>CLI + Python SDK</li>
+          <li>Dataset-card schema (Apache 2.0)</li>
+          <li class="no">Identifier-drift reports</li>
+          <li class="no">Custom cohort definition</li>
+        </ul>
+      </div>
+
+      <div class="tier featured">
+        <div class="ribbon">Recommended</div>
+        <h3>Pro</h3>
+        <div class="price">$499<span class="sub">/ researcher / mo</span></div>
+        <ul>
+          <li>Everything in Open Research</li>
+          <li>Identifier-drift reports</li>
+          <li>Custom cohort definition</li>
+          <li>10 datasets / month</li>
+          <li>Email support (48h SLA)</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>Team</h3>
+        <div class="price">$1,999<span class="sub">/ team / mo</span></div>
+        <ul>
+          <li>Everything in Pro</li>
+          <li>50 datasets / month</li>
+          <li>Team workspace + SSO</li>
+          <li>Priority support (24h SLA)</li>
+          <li class="no">On-prem deployment</li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Everything in Team</li>
+          <li>On-prem deployment</li>
+          <li>Private datasets</li>
+          <li>GTEx-derived controlled tier (with dbGaP auth)</li>
+          <li>Embedded engineer hours</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--bg-muted); border-top: 1px solid var(--border);">
+  <div class="container" style="max-width: 760px; text-align: center;">
+    <span class="eyebrow" style="display: inline-block; padding: 0.25rem 0.75rem; background: var(--primary-light); color: var(--primary-hover); border-radius: 999px; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 1rem;">Contact</span>
+    <h2 style="font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 1rem;">No NDA required to evaluate.</h2>
+    <p style="font-size: 1.0625rem; color: var(--text-muted); margin-bottom: 2rem;">
+      This public site is sufficient for an initial evaluation of the
+      product concept, dataset-card schema, and licence posture. For
+      deeper technical evaluation, source-code access, or commercial
+      discussions, reach out directly.
+    </p>
+    <div style="display: flex; gap: 0.875rem; justify-content: center; flex-wrap: wrap;">
+      <a href="mailto:testdemoqwenai2025@gmail.com?subject=Private%20beta%20access" class="btn btn-primary">
+        Request evaluation access →
+      </a>
+      <a href="https://github.com/testdemoqwenai2025-creator/DemoReadyOmics" target="_blank" rel="noopener" class="btn btn-outline">
+        View source on GitHub ↗
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,3 +1,9 @@
+---
+layout: default
+title: Licence Matrix Summary
+description: Tessera Bio / ReadyOmics — Licence Matrix Summary documentation
+---
+
 # Licence Compatibility — Public Summary
 
 Tessera Bio / ReadyOmics ingests data from a range of public biological data portals. Each portal has its own licence terms that govern whether the data can be redistributed, used commercially, or modified.

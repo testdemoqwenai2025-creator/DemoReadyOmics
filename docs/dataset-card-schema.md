@@ -1,3 +1,9 @@
+---
+layout: default
+title: Dataset Card Schema
+description: Tessera Bio / ReadyOmics — Dataset Card Schema documentation
+---
+
 # Dataset Card Schema
 
 Every ML-ready dataset shipped by Tessera Bio is accompanied by a machine-readable **dataset card**. The dataset card is the primary artefact that allows an ML team to trust, reproduce, and audit a model trained on the dataset.

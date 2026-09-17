@@ -1,3 +1,9 @@
+---
+layout: default
+title: How It Works
+description: Tessera Bio / ReadyOmics — How It Works documentation
+---
+
 # How the public / private repository split works
 
 ## Architecture
