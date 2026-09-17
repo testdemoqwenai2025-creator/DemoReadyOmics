@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[32945,["/DemoReadyOmics/_next/static/chunks/9002d94f03357a25.js","/DemoReadyOmics/_next/static/chunks/9c7858740a55b8cd.js","/DemoReadyOmics/_next/static/chunks/2cab3d1337a05b2e.js","/DemoReadyOmics/_next/static/chunks/5f1c19aeedad851b.js"],"DatasetDetailClient"]
-3:I[97367,["/DemoReadyOmics/_next/static/chunks/2f236954d6a65e12.js"],"OutletBoundary"]
+2:I[32945,["/DemoReadyOmics/_next/static/chunks/9002d94f03357a25.js","/DemoReadyOmics/_next/static/chunks/9c7858740a55b8cd.js","/DemoReadyOmics/_next/static/chunks/b3fd11e3d9670b7d.js","/DemoReadyOmics/_next/static/chunks/24feb4c8f705b92f.js"],"DatasetDetailClient"]
+3:I[97367,["/DemoReadyOmics/_next/static/chunks/ff1a16fafef87110.js","/DemoReadyOmics/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
 4:"$Sreact.suspense"
-0:{"buildId":"JmrjnpTYh8g7LR3YvJ1JU","rsc":["$","$1","c",{"children":[["$","$L2",null,{"datasetId":"tessera.rnaseq.v0.1.2026-09.tcga-lung-open.ensembl-v110"}],[["$","script","script-0",{"src":"/DemoReadyOmics/_next/static/chunks/2cab3d1337a05b2e.js","async":true}],["$","script","script-1",{"src":"/DemoReadyOmics/_next/static/chunks/5f1c19aeedad851b.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"gvD_jJ1XB77QnqsXwg2Lk","rsc":["$","$1","c",{"children":[["$","$L2",null,{"datasetId":"tessera.rnaseq.v0.1.2026-09.tcga-lung-open.ensembl-v110"}],[["$","script","script-0",{"src":"/DemoReadyOmics/_next/static/chunks/b3fd11e3d9670b7d.js","async":true}],["$","script","script-1",{"src":"/DemoReadyOmics/_next/static/chunks/24feb4c8f705b92f.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
 5:null
